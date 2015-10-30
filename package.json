@@ -1,0 +1,30 @@
+{
+  "name": "rosebank-tally",
+  "version": "1.0.0",
+  "description": "A bunyan stream used to POST log objects to rosebank-logger over HTTP.",
+  "main": "index.js",
+  "dependencies": {
+    "request": "2.65.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neurotech/rosebank-tally.git"
+  },
+  "keywords": [
+    "bunyan",
+    "logs",
+    "logging",
+    "http",
+    "post"
+  ],
+  "author": "Tim Douglas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neurotech/rosebank-tally/issues"
+  },
+  "homepage": "https://github.com/neurotech/rosebank-tally#readme"
+}
