@@ -1,5 +1,7 @@
 var EventEmitter = require('events').EventEmitter;
 var request = require('request');
+var acho = require('acho');
+var acho = new Acho();
 
 var url = 'http://' + process.env.ROSEBANK_LOGGER_HTTPHOST + ':' + process.env.ROSEBANK_LOGGER_HTTPPORT + '/logger/';
 
@@ -15,8 +17,10 @@ Tally.prototype.write = function (record) {
       json: record
     }, function (error, response, body) {
       if (error) {
-        console.error('request error: ', error);
-      }      
+        acho.error('request error: ', error);
+      } else {
+        acho.success(response);
+      }
     });
   }
 
@@ -27,8 +31,10 @@ Tally.prototype.write = function (record) {
       json: record
     }, function (error, response, body) {
       if (error) {
-        console.error('request error: ', error);
-      }      
+        acho.error('request error: ', error);
+      } else {
+        acho.success(response);
+      }
     });
   }
 
@@ -39,8 +45,10 @@ Tally.prototype.write = function (record) {
       json: record
     }, function (error, response, body) {
       if (error) {
-        console.error('request error: ', error);
-      }      
+        acho.error('request error: ', error);
+      } else {
+        acho.success(response);
+      }
     });
   }
 
@@ -51,8 +59,10 @@ Tally.prototype.write = function (record) {
       json: record
     }, function (error, response, body) {
       if (error) {
-        console.error('request error: ', error);
-      }      
+        acho.error('request error: ', error);
+      } else {
+        acho.success(response);
+      }
     });
   }
 };
