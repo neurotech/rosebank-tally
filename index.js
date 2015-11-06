@@ -1,6 +1,6 @@
 var EventEmitter = require('events').EventEmitter;
 var request = require('request');
-var acho = require('acho');
+var Acho = require('acho');
 var acho = new Acho();
 
 var url = 'http://' + process.env.ROSEBANK_LOGGER_HTTPHOST + ':' + process.env.ROSEBANK_LOGGER_HTTPPORT + '/logger/';
