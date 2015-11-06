@@ -1,6 +1,6 @@
 {
   "name": "rosebank-tally",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A bunyan stream used to POST log objects to rosebank-logger over HTTP.",
   "main": "index.js",
   "dependencies": {
