@@ -19,7 +19,7 @@ Tally.prototype.write = function (record) {
       if (error) {
         acho.error('request error: ', error);
       } else {
-        acho.success(response);
+        acho.success(body);
       }
     });
   }
@@ -33,7 +33,7 @@ Tally.prototype.write = function (record) {
       if (error) {
         acho.error('request error: ', error);
       } else {
-        acho.success(response);
+        acho.success(body);
       }
     });
   }
@@ -47,7 +47,7 @@ Tally.prototype.write = function (record) {
       if (error) {
         acho.error('request error: ', error);
       } else {
-        acho.success(response);
+        acho.success(body);
       }
     });
   }
@@ -61,7 +61,7 @@ Tally.prototype.write = function (record) {
       if (error) {
         acho.error('request error: ', error);
       } else {
-        acho.success(response);
+        acho.success(body);
       }
     });
   }
