@@ -1,7 +1,7 @@
 var EventEmitter = require('events').EventEmitter;
 var request = require('request');
 
-var url = 'http://' + process.env.LOGGER_HOST + ':' + process.env.LOGGER_PORT + '/logger/';
+var url = 'http://' + process.env.ROSEBANK_LOGGER_DBHOST + ':' + process.env.ROSEBANK_LOGGER_DBPORT + '/logger/';
 
 function Tally() {
   EventEmitter.call(this);
