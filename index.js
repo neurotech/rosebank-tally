@@ -17,9 +17,9 @@ Tally.prototype.write = function (record) {
       json: record
     }, function (error, response, body) {
       if (error) {
-        acho.error('request error: ', error);
+        acho.error(error);
       } else {
-        acho.success('success: ' + body);
+        acho.success(JSON.stringify(body));
       }
     });
   }
@@ -31,9 +31,9 @@ Tally.prototype.write = function (record) {
       json: record
     }, function (error, response, body) {
       if (error) {
-        acho.error('request error: ', error);
+        acho.error(error);
       } else {
-        acho.success('success: ' + body);
+        acho.success(JSON.stringify(body));
       }
     });
   }
@@ -45,9 +45,9 @@ Tally.prototype.write = function (record) {
       json: record
     }, function (error, response, body) {
       if (error) {
-        acho.error('request error: ', error);
+        acho.error(error);
       } else {
-        acho.success('success: ' + body);
+        acho.success(JSON.stringify(body));
       }
     });
   }
@@ -59,9 +59,9 @@ Tally.prototype.write = function (record) {
       json: record
     }, function (error, response, body) {
       if (error) {
-        acho.error('request error: ', error);
+        acho.error(error);
       } else {
-        acho.success('success: ' + body);
+        acho.success(JSON.stringify(body));
       }
     });
   }
