@@ -10,6 +10,34 @@ A bunyan stream used to POST log objects to rosebank-logger over HTTP.
 
 `ROSEBANK_LOGGER_HTTPPORT` - Port of `rosebank-logger` instance
 
+## Preferred Log Object Structure
+
+### `error`
+
+```javascript
+{
+  error: {
+    name: 'boom',
+    message: 'TypeError',
+    stack: 'TypeError: boom\n    at Object.<anonymous> ...'
+  }
+}
+```
+
+### `info` & `warn`
+
+```javascript
+{
+  operation: 'Information',
+  detail: {
+    /*
+      Particulars about the event that this log entry relates to
+      (See below for examples)
+    */
+  }
+}
+```
+
 ## Example Usage
 
 ```javascript
@@ -31,7 +59,6 @@ log.error({
 });
 
 var info = {
-  event_id: 117,
   operation: 'Example Information',
   detail: {
     filename: 'example.csv',
@@ -41,7 +68,6 @@ var info = {
 log.info(info);
 
 var warn = {
-  event_id: 283,
   operation: 'Example Warning',
   detail: {
     memory: 5678192,
