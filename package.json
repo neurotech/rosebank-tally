@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "acho": "2.3.0",
-    "request": "2.65.0"
+    "request": "2.82.0"
   },
   "devDependencies": {},
   "scripts": {
